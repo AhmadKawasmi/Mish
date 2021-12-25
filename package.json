@@ -1,0 +1,20 @@
+{
+  "name": "Mish",
+  "version": "1.0.0",
+  "main": "Home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmadKawasmi/Mish.git"
+  },
+  "keywords": [],
+  "author": "Ahmad Kawasmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhmadKawasmi/Mish/issues"
+  },
+  "homepage": "https://github.com/AhmadKawasmi/Mish#readme",
+  "description": ""
+}
