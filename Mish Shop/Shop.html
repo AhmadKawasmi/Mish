@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://kis.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="app icon/mishwarkom-app-Small.png">
+    <link rel="stylesheet" href="Shop.css">
+    <title>Shop</title>
+</head>
+<body>
+    <nav class="Header">  
+        <label class="nav-logo" for="">Mishwarkomمشواركم </label>
+        <input name="search" id="SearchBox" class="SearchBox" type="text" placeholder="Search for palestinian Stores...">
+      <i type="submit" name="submit-search" id="Search" class="fa fa-search" aria-hidden="true"></i>
+   <ul>
+       <li><a  href="../Home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+       <li style="border-bottom: 3px solid white"><a style="color:white;" href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shop</a></li>
+       <li><a href="#About"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Cart</a></li>
+ </ul>  
+    <a class="Hamburger" href=""><img style="padding-top: 1px;" src="icons/menu/hamburger/30x30_hamburger.png" alt=""></a>
+</nav>
+
+<div id="bg-modal" class="animate__animated animate__fadeInUpBig animate__delay-0s" >
+    <div class="modal-SearchBox-Div">
+        <span id="CloseSerach">&#10008;</span>
+           <input class="SearchBox" type="text" id="SearchBar" onkeyup="SerachShops()" placeholder="Search for palestinian Stores...">
+    <i id="Search" class="fa fa-search" aria-hidden="true"></i>
+    </div>
+   
+   <div class="modal-Content">
+        <ul id="SearchUl" >
+           <li class="Search-Ul-Li"><img src="icons/category/architects/30x30_architects.png" alt=""><a class="Search-Ul-Li-a" href="">Architects</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/butcher shops/30x30_butchershops.png" alt=""><a class="Search-Ul-Li-a" href="">Butcher shops</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/clothing and shoes/30x30_clothingshoes.png" alt=""><a class="Search-Ul-Li-a" href="">Clothing and shoes</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/driving schools/30x30_drivingschools.png" alt=""><a class="Search-Ul-Li-a" href="">Driving schools</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/education/30x30_education.png" alt=""><a class="Search-Ul-Li-a" href="">Education</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/food and dining/30x30_fooddining.png" alt=""><a class="Search-Ul-Li-a" href="">Food and dinning</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/hair salons/30x30_hairsalons.png" alt=""><a class="Search-Ul-Li-a" href="">Hair salons</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/home goods/30x30_homegoods.png" alt=""><a class="Search-Ul-Li-a" href="">Home goods</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/hotels/30x30_hotels.png" alt=""><a class="Search-Ul-Li-a" href="">Hotels</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/lawyers/30x30_lawyers.png" alt=""><a class="Search-Ul-Li-a" href="">Lawyers</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/medicine and health/30x30_medicinehealth.png" alt=""><a class="Search-Ul-Li-a" href="">Medicine and health</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/music production/30x30_musicproduction.png" alt=""><a class="Search-Ul-Li-a" href="">Music production</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/phones and accessories/30x30_phonesaccessories.png" alt=""><a class="Search-Ul-Li-a" href="">Phones and accessories</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/supermarkets/30x30_supermarkets.png" alt=""><a class="Search-Ul-Li-a" href="">Supermarkets</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/taxi services/30x30_taxiservices.png" alt=""><a class="Search-Ul-Li-a" href="">Taxi service</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/toys and gifts/30x30_toysgifts.png" alt=""><a class="Search-Ul-Li-a" href="">Toys and gifts</a></li>
+           <li class="Search-Ul-Li"><img src="icons/category/travel offices/30x30_travleoffices.png" alt=""><a class="Search-Ul-Li-a" href="">Travel office</a></li>
+        </ul>
+    </div>
+</div>  
+<div class="ShopContent">
+    <div Class="transverse-Card">
+         <img src="../Shop images/color 10.jpg" alt="">
+         <h1 class="animate__animated animate__fadeInDown animate__delay-0s" >Mishwarkom ShopCenter <i class="fa fa-shopping-cart" aria-hidden="true"></i></h1>
+    </div>
+    <div class="Cards">
+        <div class="Card">
+            <img class="Cards-img" src="../Shop images/Color4.jpeg" alt=""><br>
+            <h3>discriptioon</h3>
+            <h4>100$</h4><br>
+            <button class="Cards-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button>
+        </div>
+        <div id="HTMLCard" class="Card">
+            <img class="Cards-img" src="../Shop images/Color1.jpeg" alt=""><br>
+            <h3>discriptioon</h3>
+            <h4>100$</h4><br>
+            <button class="Cards-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button>
+       </div>
+         <div id="HTMLCard" class="Card">
+            <img class="Cards-img" src="../Shop images/Color2.jpeg" alt=""><br>
+            <h3>discriptioon</h3>
+            <h4>100$</h4><br>
+            <button class="Cards-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button>
+       </div>
+         <div class="Card">
+            <img class="Cards-img" src="../Shop images/Color3.jpeg"><br>
+            <h3>discriptioon</h3>
+            <h4>100$</h4><br>
+            <button class="Cards-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button>
+        </div>
+    </div>
+</div>
+<div class="ShopContent">
+    <div class="Cards">
+        <div class="Card">
+            <img class="Cards-img" src="../Shop images/Color5.jpeg" alt=""><br>
+            <h3>discriptioon</h3>
+            <h4>100$</h4><br>
+            <button class="Cards-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button>
+        </div>
+        <div id="HTMLCard" class="Card">
+            <img class="Cards-img" src="../Shop images/Color6.jpeg" alt=""><br>
+            <h3>discriptioon</h3>
+            <h4>100$</h4><br>
+            <button class="Cards-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button>
+       </div>
+         <div id="HTMLCard" class="Card">
+            <img class="Cards-img" src="../Shop images/Color7.jpeg" alt=""><br>
+            <h3>discriptioon</h3>
+            <h4>100$</h4><br>
+            <button class="Cards-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button>
+       </div>
+         <div class="Card">
+            <img class="Cards-img" src="../Shop images/Color8.jpeg"><br>
+            <h3>discriptioon</h3>
+            <h4>100$</h4><br>
+            <button class="Cards-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add To Cart</button>
+        </div>
+    </div>
+</div><br><br><br><br><br><br>
+
+<script>
+  
+</script> 
+</body>
+</html>

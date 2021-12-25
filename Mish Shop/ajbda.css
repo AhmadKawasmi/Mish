@@ -1,0 +1,98 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(252, 252, 252);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: monospace;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.Cards{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 400px;
+    background-color: #2eaaa0;
+}
+
+
+.Card{
+    height: 300px;
+    width: 250px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 0px #1b1b1b;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+
+.Cards-btn{
+    width: 100px;
+    height: 30px;
+    background-color:  rgb(255,99,71);
+    color: white;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.Cards-btn:hover{
+    background-color: white;
+    color:rgb(255,99,71) ;
+    border: 1px solid rgb(255,99,71);
+}
+
+.Card a{
+    padding: 10px;
+    line-height: 70px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(255,99,71);
+    font-family: monospace;
+    transition: all 0.4s ease;
+}
+
+.Card a:hover{
+    cursor: pointer;
+    color:  rgb(255,99,71);
+    border: 1px solid rgb(255,99,71);
+    background-color: #fff;
+}
+
+.Card-p{
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.Card h1{
+    color: black;
+}
+
+.Card:hover{
+    box-shadow: 0 0 2px #1b1b1b;
+
+}
+
+.Card:hover .Card h1{
+    color: rgb(255,99,71) ;
+}
+
+.Cards-img{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}

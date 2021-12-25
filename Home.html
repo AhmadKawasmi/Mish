@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> lorem
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://kis.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="Home.js"></script>
+    <link rel="shortcut icon" href="app icon/mishwarkom-app-Small.png">
+    <link rel="stylesheet" href="Home.css">
+    <title>Mishwarkom</title>
+</head>
+<body>
+    <nav class="Header">  
+        <label class="nav-logo" for="">Mishwarkomمشواركم </label>
+        <input name="search" id="SearchBox" class="SearchBox" type="text" placeholder="Search for palestinian Stores...">
+      <i type="submit" name="submit-search" id="Search" class="fa fa-search" aria-hidden="true"></i>
+   <ul>
+       <li style="border-bottom: 3px solid white"><a style="color:white;" href="Home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+       <li><a href="./Mish Shop/Shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shop</a></li>
+       <li><a href="#About"><i class="fa fa-info" aria-hidden="true"></i> About</a></li>
+ </ul>  
+    <a class="Hamburger" href=""><img style="padding-top: 1px;" src="icons/menu/hamburger/30x30_hamburger.png" alt=""></a>
+</nav>
+<div class="Main-Logo-div">
+         <img class="animate__animated animate__backInLeft animate__delay-0s"  id="Main-Logo" src="Logo/500x288_logo.png" alt="">
+          <span class="GoUpBtn" ><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+</div>
+   <div class="Cards">
+    <div id="HTMLCard" class="Card">
+        <img class="Cards-img" src="icons/search/searchbar/100x100_search.png" alt=""><br>
+        <h1>Search</h1>
+        <p class="Card-p">Search Now</p><br>
+        <button id="Cards-OpenSearch" class="Cards-btn">Click Here</button>
+   </div>
+     <div id="HTMLCard" class="Card">
+        <img class="Cards-img" src="icons/navigation/news/100x100_navnews.png" alt=""><br>
+        <h1>News</h1>
+        <p class="Card-p">Check Our daily News</p><br>
+        <button class="Cards-btn">Click Here</button>
+   </div>
+     <div class="Card">
+        <img class="Cards-img" src="icons/navigation/coupon/100x100_navcoupon.png"><br>
+        <h1>Coupons</h1>
+        <p  class="Card-p">Check Out the sales now!!</p><br>
+        <button id="OpenCoboModal" class="Cards-btn">Click Here</button>
+    </div>
+    <div id="HTMLCard" class="Card">
+        <img class="Cards-img" src="icons/navigation/shop/100x100_navshop.png" alt=""><br>
+        <h1>Shop</h1>
+        <p class="Card-p">Check Our Store Colllection</p><br>
+        <button class="Cards-btn"> Click Here</button>
+   </div>
+</div>
+
+    <div id="bg-modal" class="animate__animated animate__fadeInUpBig animate__delay-0s" >
+        <div class="modal-SearchBox-Div">
+            <span id="CloseSerach">&#10008;</span>
+               <input class="SearchBox" type="text" id="SearchBar" onkeyup="SerachShops()" placeholder="Search for palestinian Stores...">
+        <i id="Search" class="fa fa-search" aria-hidden="true"></i>
+        </div>
+       
+       <div class="modal-Content">
+         <div class="modalSearch-Header-Div">
+             <h2> What are you <br><span style="margin-left: -7px;">feeling today?</span></h2>
+         </div><br>
+        
+            <ul id="SearchUl" >
+               <li class="Search-Ul-Li"><img src="icons/category/architects/30x30_architects.png" alt=""><a class="Search-Ul-Li-a" href="">Architects</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/butcher shops/30x30_butchershops.png" alt=""><a class="Search-Ul-Li-a" href="">Butcher shops</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/clothing and shoes/30x30_clothingshoes.png" alt=""><a class="Search-Ul-Li-a" href="">Clothing and shoes</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/driving schools/30x30_drivingschools.png" alt=""><a class="Search-Ul-Li-a" href="">Driving schools</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/education/30x30_education.png" alt=""><a class="Search-Ul-Li-a" href="">Education</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/food and dining/30x30_fooddining.png" alt=""><a class="Search-Ul-Li-a" href="">Food and dinning</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/hair salons/30x30_hairsalons.png" alt=""><a class="Search-Ul-Li-a" href="">Hair salons</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/home goods/30x30_homegoods.png" alt=""><a class="Search-Ul-Li-a" href="">Home goods</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/hotels/30x30_hotels.png" alt=""><a class="Search-Ul-Li-a" href="">Hotels</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/lawyers/30x30_lawyers.png" alt=""><a class="Search-Ul-Li-a" href="">Lawyers</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/medicine and health/30x30_medicinehealth.png" alt=""><a class="Search-Ul-Li-a" href="">Medicine and health</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/music production/30x30_musicproduction.png" alt=""><a class="Search-Ul-Li-a" href="">Music production</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/phones and accessories/30x30_phonesaccessories.png" alt=""><a class="Search-Ul-Li-a" href="">Phones and accessories</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/supermarkets/30x30_supermarkets.png" alt=""><a class="Search-Ul-Li-a" href="">Supermarkets</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/taxi services/30x30_taxiservices.png" alt=""><a class="Search-Ul-Li-a" href="">Taxi service</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/toys and gifts/30x30_toysgifts.png" alt=""><a class="Search-Ul-Li-a" href="">Toys and gifts</a></li>
+               <li class="Search-Ul-Li"><img src="icons/category/travel offices/30x30_travleoffices.png" alt=""><a class="Search-Ul-Li-a" href="">Travel office</a></li>
+            </ul>
+        </div>
+    </div> 
+    
+    <div id="bg-modal-Cobons" class="animate__animated animate__fadeInUpBig animate__delay-0s" >
+     <div class="modal-Content">
+           <div class="Cobon-Card">
+             <h1>Buy one Get one</h1>
+                <h3>text text</h3>
+             <p>text text text text text text </p>
+                 <button class="Coupons-Modal-Button">SHOP</button>
+           </div>
+           <div class="Cobon-Card">
+            <h1>100 nis of</h1>
+            <h3>text text</h3>
+            <p>text text text text text text </p>
+            <button class="Coupons-Modal-Button">SHOP</button>
+          </div>
+          <div class="Cobon-Card">
+            <h1>30%</h1>
+            <h3>text text</h3>
+            <p>text text text text text text </p>
+            <button class="Coupons-Modal-Button">SHOP</button>
+          </div>
+      </div>
+  </div>  
+   
+
+
+     <!--Start of Shop Code-->
+
+    <br>
+    <h1 style="margin-left: 40%;">Mishwarkom Shop <i class="fa fa-shopping-cart" aria-hidden="true"></i></h1> 
+    <div class="HomePageShop owl-carousel">
+        <div class="wrapper">
+            <div class="card front-face">
+                <img src="./Shop images/Color1.jpeg" alt="">
+            </div>
+        <div class="card back-face">
+            <img src="./Shop images/Color1.jpeg" alt="">
+              <div class="info">
+                <div class="title">Title</div>
+              <p>discriptioon</p>
+              <h1>100$</h1>
+             </div>
+          </div>
+        </div>
+        <div class="wrapper">
+            <div class="card front-face">
+                <img src="./Shop images/Color2.jpeg" alt="">
+            </div>
+        <div class="card back-face">
+            <img src="./Shop images/Color2.jpeg" alt="">
+              <div class="info">
+                <div class="title">Title</div>
+              <p>discriptioon</p>
+              <h1>100$</h1>
+             </div>
+          </div>
+        </div>
+       <div class="wrapper">
+        <div class="card front-face">
+            <img src="./Shop images/Color3.jpeg" alt="">
+        </div>
+    <div class="card back-face">
+        <img src="./Shop images/Color3.jpeg" alt="">
+          <div class="info">
+            <div class="title">Title</div>
+          <p>discriptioon</p>
+          <h1>100$</h1>
+         </div>
+      </div>
+    </div>
+     <div class="wrapper">
+        <div class="card front-face">
+            <img src="./Shop images/Color4.jpeg" alt="">
+        </div>
+    <div class="card back-face">
+        <img src="./Shop images/Color4.jpeg" alt="">
+          <div class="info">
+            <div class="title">Title</div>
+          <p>discriptioon</p>
+          <h1>100$</h1>
+         </div>
+      </div>
+    </div>
+    <div class="wrapper">
+        <div class="card front-face">
+            <img src="./Shop images/Color5.jpeg" alt="">
+        </div>
+    <div class="card back-face">
+        <img src="./Shop images/Color5.jpeg" alt="">
+          <div class="info">
+            <div class="title">Title</div>
+          <p>discriptioon</p>
+          <h1>100$</h1>
+         </div>
+      </div>
+    </div>
+     <div class="wrapper">
+        <div class="card front-face">
+            <img src="./Shop images/Color6.jpeg" alt="">
+        </div>
+    <div class="card back-face">
+        <img src="./Shop images/Color6.jpeg" alt="">
+          <div class="info">
+            <div class="title">Title</div>
+          <p>discriptioon</p>
+          <h1>100$</h1>
+         </div>
+      </div>
+    </div>
+     <div class="wrapper">
+        <div class="card front-face">
+            <img src="./Shop images/Color7.jpeg" alt="">
+        </div>
+    <div class="card back-face">
+        <img src="./Shop images/Color7.jpeg" alt="">
+          <div class="info">
+            <div class="title">Title</div>
+          <p>discriptioon</p>
+          <h1>100$</h1>
+         </div>
+      </div>
+    </div>
+
+        <div class="wrapper">
+            <div class="card front-face">
+                <img src="./Shop images/Color8.jpeg" alt="">
+            </div>
+        <div class="card back-face">
+            <img src="./Shop images/Color8.jpeg" alt="">
+              <div class="info">
+                <div class="title">Title</div>
+              <p>discriptioon</p>
+              <h1>100$</h1>
+             </div>
+          </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="card front-face">
+                <img src="./Shop images/Color9.jpeg" alt="">
+            </div>
+        <div class="card back-face">
+            <img src="./Shop images/Color9.jpeg" alt="">
+              <div class="info">
+                <div class="title">Title</div>
+              <p>discriptioon</p>
+              <h1>100$</h1>
+             </div>
+          </div>
+        </div>
+    
+   </div><br><br>
+   <div style="margin-left: 42%;">
+          <a style="padding: 20px 22px"  class="Cards-btn" href="./Mish Shop/Shop.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> SHOP ALL PAINTINGS NOW ></a>
+     </div><br><br><br>
+
+
+   <!--Start of QuistionMark Section-->
+      <span id="About"> </span>
+
+   <div class="QuistionMark-Filed">
+       <div style="border: none; overflow: scroll;" class="QuistionMark-Filed-Section">
+        <h1 id="About" class="QuistionMark-Filed-Section-h1">Last Updates</h1> <br> 
+        <div class="QuistionMark-Filed-Section-Updates-div">
+            <h2>Update 21.35</h2>
+             <p>	athbijel	onaba	ewfi	edgogi	vina	pothy	voerva	ikup
+                 kiuth	omith	athgethe	alki	edum	sunau	ofzokal	weibash	thouw	uruler
+                 ovih	beciv	ekil	osraped	ovyo	ashethko	iznu	zimegez
+                 yapa	awhein	uhne	pasal	elra	onos	ithtouk	uthwa	</p>
+        </div>
+        <div class="QuistionMark-Filed-Section-Updates-div">
+            <h2>Update 7.55</h2>
+             <p>	athbijel	onaba	ewfi	edgogi	vina	pothy	voerva	ikup
+                 kiuth	omith	athgethe	alki	edum	sunau	ofzokal	weibash	thouw	uruler
+                 ovih	beciv	ekil	osraped	ovyo	ashethko	iznu	zimegez
+                 yapa	awhein	uhne	pasal	elra	onos	ithtouk	uthwa	</p>
+        </div>
+        <div class="QuistionMark-Filed-Section-Updates-div">
+            <h2>Update 5.35</h2>
+             <p>	athbijel	onaba	ewfi	edgogi	vina	pothy	voerva	ikup
+                 kiuth	omith	athgethe	alki	edum	sunau	ofzokal	weibash	thouw	uruler
+                 ovih	beciv	ekil	osraped	ovyo	ashethko	iznu	zimegez
+                 yapa	awhein	uhne	pasal	elra	onos	ithtouk	uthwa	</p>
+        </div>
+        <div class="QuistionMark-Filed-Section-Updates-div">
+            <h2>Update 5</h2>
+             <p>	athbijel	onaba	ewfi	edgogi	vina	pothy	voerva	ikup
+                 kiuth	omith	athgethe	alki	edum	sunau	ofzokal	weibash	thouw	uruler
+                 ovih	beciv	ekil	osraped	ovyo	ashethko	iznu	zimegez
+                 yapa	awhein	uhne	pasal	elra	onos	ithtouk	uthwa	</p>
+        </div>
+           <div class="QuistionMark-Filed-Section-Updates-div">
+               <h2>Update 4</h2>
+                <p>	athbijel	onaba	ewfi	edgogi	vina	pothy	voerva	ikup
+                    kiuth	omith	athgethe	alki	edum	sunau	ofzokal	weibash	thouw	uruler
+                    ovih	beciv	ekil	osraped	ovyo	ashethko	iznu	zimegez
+                    yapa	awhein	uhne	pasal	elra	onos	ithtouk	uthwa	</p>
+           </div>
+           <div class="QuistionMark-Filed-Section-Updates-div">
+            <h2>Update 3</h2>
+             <p>	athbijel	onaba	ewfi	edgogi	vina	pothy	voerva	ikup
+                 kiuth	omith	athgethe	alki	edum	sunau	ofzokal	weibash	thouw	uruler
+                 ovih	beciv	ekil	osraped	ovyo	ashethko	iznu	zimegez
+                 yapa	awhein	uhne	pasal	elra	onos	ithtouk	uthwa	</p>
+        </div>
+        <div class="QuistionMark-Filed-Section-Updates-div">
+            <h2>Update 2</h2>
+             <p>	athbijel	onaba	ewfi	edgogi	vina	pothy	voerva	ikup
+                 kiuth	omith	athgethe	alki	edum	sunau	ofzokal	weibash	thouw	uruler
+                 ovih	beciv	ekil	osraped	ovyo	ashethko	iznu	zimegez
+                 yapa	awhein	uhne	pasal	elra	onos	ithtouk	uthwa	</p>
+        </div>
+        <div class="QuistionMark-Filed-Section-Updates-div">
+            <h2>Update 1</h2>
+             <p>	athbijel	onaba	ewfi	edgogi	vina	pothy	voerva	ikup
+                 kiuth	omith	athgethe	alki	edum	sunau	ofzokal	weibash	thouw	uruler
+                 ovih	beciv	ekil	osraped	ovyo	ashethko	iznu	zimegez
+                 yapa	awhein	uhne	pasal	elra	onos	ithtouk	uthwa	</p>
+        </div>
+       </div>
+     <div class="QuistionMark-Filed-Section">
+         <img src="icons/navigation/about/50x50_navaboout.png" alt="">
+          <h1 class="QuistionMark-Filed-Section-h1">About</h1><br>
+          <p>oithsho	obip	rueshho	woor	isudon	foaw	oborhi	irar	uthsho	kumubar
+            lokeiy	nenegur	okthapu	daho	vexefyo	eldo	botaal	moki	ylof	lyig
+            moopap	owot	abutak	nuri	soidez	ipok	ifun	dialthy	ziru	kaveg
+            shurekly	book	ihusey	thetalog	zetedu	kaeth	funu	ehon	akuthsa	ahiw
+            subulu	ekma	ofka	ozalwi	arew	newuof	waukli	namu	neboglu	thyho
+            ulyth	sowo	athbijel	onaba	ewfi	edgogi	vina	pothy	voerva	ikup
+            kiuth	omith	athgethe	alki	edum	sunau	ofzokal	weibash	thouw	uruler
+            ovih	beciv	ekil	hexog	obin	emez	famiup	cetes	giweketh	aywe
+            oyu	butowe	iwey	ohar	edle	thypozu	reylde	uyenno	fetha	amva
+            gaar	vanies	obitiz	bolashi	owhumi	osraped	ovyo	ashethko	iznu	zimegez
+            yapa	awhein	uhne	pasal	elra	onos	ithtouk	uthwa	ufbo	huyi
+            ahegap	shivu	riveh	urag	emho	ogvo	ohep	ithefeth	basav	zeha
+            shaim	onural	odnuti	gataktu	yihuthen	rotu	oyohek	upuvfe	edyu	guveth
+            hiaf	ihith	sohasbe	shutedza	uwok	taig	shiokpi	niirtha	thamooh	thabi
+            olgure	utyeaf	kewilu	muegun	isga	gase	kotha	iivi	itsu	riku
+            yies	fuovce	ilodan	udithpe	efugoth	vibimoh	lueb	osishuv	wuvori	lapoa
+            onifri	yaav	uhig	ethaid	nashilu	muwub	eshtho	laatep	anbuho	vurofet
+            shapodo	iyu	apuy	wabu	dumo	woagov	ebgoib	aoyosh	lomu	eykuve
+            enhuab	shevupye	redaz	awur	edmunu	dubogew	thuekthe	wiab	hegemud	sathy
+            fayu	igye	amoptho	athpi	osob	ovithez	ipfathi	epsi	wazuh	zeeth </p>
+            <br><br><br><br><br><br>
+            <a style="color:black; font-size: 18px; text-decoration: underline;" href="">Help!</a>
+     </div>
+     <div style="border: none;" class="QuistionMark-Filed-Section">
+        <h1 class="QuistionMark-Filed-Section-h1">Servises</h1>
+           <div class="QuistionMark-Filed-Section-Servise-div">
+              <h1 class="QuistionMark-Filed-Section-Servise-div-h1">1</h1>
+                <p>e	shutedza	uwok	taig	shiokpi	niirtha	thamooh	thabi
+                    olgure	utyeaf	kewilu	muegun	isga	gase	kotha	iivi	itsu	riku
+                    yies	fuovce	ilodan	udithpe	efugoth	vibimoh	lueb	osishuv	wuvori	lapoa
+                    onifri	yaavet
+                    shapodo	iyu	apuy	wabu	dumo	woagov	ebgoib	aoyosh	lomu	eykuve</p>
+           </div>
+           <div class="QuistionMark-Filed-Section-Servise-div">
+            <h1 class="QuistionMark-Filed-Section-Servise-div-h1">2</h1>
+              <p>e	shutedza	uwok	taig	shiokpi	niirtha	thamooh	thabi
+                  olgure	utyeaf	kewilu	muegun	isga	gase	kotha	iivi	itsu	riku
+                  yies	fuovce	ilodan	udithpe	efugoth	vibimoh	lueb	osishuv	wuvori	lapoa
+                  onifri	yaavet
+                  shapodo	iyu	apuy	wabu	dumo	woagov	ebgoib	aoyosh	lomu	eykuve</p>
+         </div>
+         <div class="QuistionMark-Filed-Section-Servise-div">
+            <h1 class="QuistionMark-Filed-Section-Servise-div-h1">3</h1>
+              <p>e	shutedza	uwok	taig	shiokpi	niirtha	thamooh	thabi
+                  olgure	utyeaf	kewilu	muegun	isga	gase	kotha	iivi	itsu	riku
+                  yies	fuovce	ilodan	udithpe	efugoth	vibimoh	lueb	osishuv	wuvori	lapoa
+                  onifri	yaavet
+                  shapodo	iyu	apuy	wabu	dumo	woagov	ebgoib	aoyosh	lomu	eykuve</p>
+         </div>
+         <div class="QuistionMark-Filed-Section-Servise-div">
+            <h1 class="QuistionMark-Filed-Section-Servise-div-h1">4</h1>
+              <p>e	shutedza	uwok	taig	shiokpi	niirtha	thamooh	thabi
+                  olgure	utyeaf	kewilu	muegun	isga	gase	kotha	iivi	itsu	riku
+                  yies	fuovce	ilodan	udithpe	efugoth	vibimoh	lueb	osishuv	wuvori	lapoa
+                  onifri	yaavet
+                  shapodo	iyu	apuy	wabu	dumo	woagov	ebgoib	aoyosh	lomu	eykuve</p>
+         </div>
+     </div>
+    </div>
+
+    <!-- Start of the location Code-->
+
+   <div class="Location-Section">
+         <div class="Location">
+             <div style="margin-left: 10px; padding-left: 10px;" class="Location-Section-Div">
+                 <h1 class="Location-Section-h1">Reach Us</h1>
+                    <ul class="Location-Section-ul">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Wadi Al-Joz (Jerusalem)</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> Mishwarkom@gmail.com</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> 0524502385</li>
+                        <li> Open Hours : 9am - 5pm</li>
+                      </ul>
+             </div>
+             <div class="Location-Section-Div">
+                <iframe class="Google-Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13565.241304801642!2d35.22908822904737!3d31.78929143941821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1503299538ab799f%3A0xc7c112663356fc15!2sWadi%20al-Joz%2C%20Jerusalem!5e0!3m2!1sen!2sil!4v1600527196516!5m2!1sen!2sil" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+             </div>
+         </div> 
+         
+   </div><br><br><br><br><br><br><br><br>
+
+
+    <!--Start of Footer Code-->
+
+<footer>
+    
+    <div>
+           <div class="SocialMediaBtn">
+                 <div id="FaceBook" class="SocialMediaIcon"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                 <a id="FaceBook_a" href="https://www.facebook.com/mishwarkom-100210071797610/" target="_blank">FaceBook</a>
+             </div>
+             <div class="SocialMediaBtn">
+                <div id="Instagram" class="SocialMediaIcon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                <a id="Instagram_a" href="https://www.instagram.com/mishwarkom/" target="_blank">Instagram</a>
+            </div>
+            <div class="SocialMediaBtn">
+                <div id="Twitter" class="SocialMediaIcon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                <a id="Twitter_a" href="" target="_blank">Twitter</a>  
+             </div>
+    </div>
+</footer>
+            
+
+
+     <script>
+
+          const SerachShops = () =>{
+            let filter = document.getElementById('SearchBar').value.toUpperCase();
+            let searchUl = document.getElementById('SearchUl');
+            let searchUlLi = document.getElementsByClassName('Search-Ul-Li');
+
+            for(var i=0; i<searchUlLi.length; i++){
+                let a = searchUlLi[i].getElementsByClassName('Search-Ul-Li-a')[0];
+                let textValue = a.textContent || a.innerHTML ;
+
+                if(textValue.toUpperCase().indexOf(filter) > -1){
+                    searchUlLi[i].style.display = '';
+                } else {
+                    searchUlLi[i].style.display = 'none';
+                }
+            }
+          }
+     </script>
+     <script>
+
+        document.addEventListener('scroll' , 
+           function(){
+               document.querySelector('.GoUpBtn').style.display = "block";
+           }
+        )
+
+        window.addEventListener('keydown' , checkKeyPress);
+
+         function checkKeyPress(key){
+             if(key.keyCode == "27"){
+                 document.querySelector('#bg-modal').style.display = "none";
+                 document.querySelector('#bg-modal-Cobons').style.display = "none";
+                 document.querySelector('body').style.overflow = "auto";
+         }}
+
+        document.querySelector('.GoUpBtn').addEventListener('click',
+         function(){
+           window.scrollTo(0,0);
+        });
+
+        document.getElementById('SearchBox').addEventListener('click',
+        function(){
+           document.querySelector('#bg-modal').style.display = "flex";
+           document.querySelector('body').style.overflow = "hidden";
+           window.scrollTo(0,0);
+           });
+
+           document.getElementById('OpenCoboModal').addEventListener('click',
+        function(){
+           document.querySelector('#bg-modal-Cobons').style.display = "flex";
+           document.querySelector('body').style.overflow = "hidden";
+           window.scrollTo(0,0);
+           });
+
+
+           document.getElementById('Search').addEventListener('click',
+        function(){
+           document.querySelector('#bg-modal').style.display = "flex";
+           document.querySelector('body').style.overflow = "hidden";
+           window.scrollTo(0,0);
+           });
+           
+        document.getElementById('Cards-OpenSearch').addEventListener('click',
+          function(){
+              document.querySelector('#bg-modal').style.display = "flex";
+              document.querySelector('body').style.overflow = "hidden";
+              window.scrollTo(0,0);
+          }
+        );   
+        
+        document.getElementById('CloseSerach').addEventListener('click',
+           function(){
+           document.querySelector('#bg-modal').style.display = "none";
+           document.querySelector('body').style.overflow = "auto";
+        });
+
+      
+  $(".HomePageShop").owlCarousel({
+       loop: true,
+       autoplay: true,
+       autoplayTimeout: 2000, 
+       autoplayHoverPause: true, 
+     });
+
+    
+    </script>
+</body>
+</html>

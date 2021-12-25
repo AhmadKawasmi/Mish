@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(252, 252, 252);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: monospace;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.Header{
+    text-align: center;
+    justify-content: center;
+    display: block;
+    top: 0px;
+    width: 100%;
+    min-height: 60px;
+    background-color: #FFC238;
+    box-shadow: 0 0 10px #1b1b1b;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.nav-logo{
+    -webkit-box-flex: 1;
+    padding-left: 120px;
+    -ms-flex: 1;
+        flex: 1;
+        float: left;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+
+.SearchBox{
+    margin-top: 17px;
+    width: 500px;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px; box-shadow: 0 0 10px 0 #fff;
+    
+}
+
+
+#Search{
+    color: #FFC238;
+    margin-left: -30px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 #fff , 0 0 1px #1b1b1b;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#Search:hover{
+    color: #fff;
+    background-color: #FFC238;
+}
+
+.Header ul{
+    list-style: none;
+    float: right;
+    padding-right: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.Header ul li{
+    display: inline-block;
+    transition: 0.5s;
+    padding: 0 10px;
+    line-height: 58px;
+}
+
+.Header ul li a{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding: 20px 0px;
+    color: black;
+    transition: all 0.4s ease;
+}
+
+.Header ul li:hover a{
+    color: #fff;
+}
+
+.Header ul li:hover{
+   color: white;
+   cursor: pointer;
+}
+
+
+#bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0,0.7);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 2;
+}
+
+
+.modal-Content{
+    width: 500px;
+    height: 80%;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+    margin-left: -505px;
+    border-radius: 10px;
+    overflow: scroll;
+    opacity: 1;
+    top: 60px;
+}
+
+.modal-Content ul{
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.modal-Content ul li{
+    width: 100%;
+    line-height: 30px;
+    transition:all 0.25s ease ;
+}
+
+.modal-Content ul li a{
+    line-height: 30px;
+    padding: 10px 200px 10px 10px;
+    color: black;
+    font-size: 16px;
+}
+
+.modal-Content ul li:hover{
+    cursor: pointer;
+}
+
+.modal-SearchBox-Div{
+    margin-top: -680px;
+}
+
+
+.modal-Content ul li:hover{
+    padding-left: 25px;
+    background-color: #ebebeb;
+}
+
+#CloseSerach{
+    color: #ff3838;
+    background-color: #fff;
+    padding: 8px 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#CloseSerach:hover{
+    cursor: pointer;
+    background-color: #ff3838;
+    color: #fff;
+
+}
+
+.ShopContent{
+
+    margin-top: 100px;
+}
+
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+
+.Card{
+    height: 370px;
+    width: 270px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 1px #1b1b1b;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+
+.Cards-btn{
+    width: 120px;
+    height: 35px;
+    background-color:  rgb(255,99,71);
+    color: white;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.Cards-btn:hover{
+    background-color: white;
+    color:rgb(255,99,71) ;
+    border: 1px solid rgb(255,99,71);
+}
+
+.Card a{
+    padding: 10px;
+    line-height: 70px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(255,99,71);
+    font-family: monospace;
+    transition: all 0.4s ease;
+}
+
+.Card a:hover{
+    cursor: pointer;
+    color:  rgb(255,99,71);
+    border: 1px solid rgb(255,99,71);
+    background-color: #fff;
+}
+
+.Card-p{
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.Card h1{
+    color: black;
+}
+
+.Card:hover{
+    box-shadow: 0 0 5px #1b1b1b;
+
+}
+
+.Card:hover .Card h1{
+    color: rgb(255,99,71) ;
+}
+
+.Cards-img{
+    width: 100%;
+    height: 270px;
+}
+
+
+.transverse-Card{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 1200px;
+    margin-left: 12%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 1px #1b1b1b;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+
+.transverse-Card img{
+    width: 1200px;
+    height: 400px;
+}
+
+
+.transverse-Card h1{
+    color:rgb(0, 0, 0);
+    font-size: 66px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -350px;
+    margin-left: 100px;
+    z-index: 1;
+}
